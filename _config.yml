@@ -32,8 +32,7 @@ baseurl: /
 # Build settings
 remote_theme: just-the-docs/just-the-docs
 #theme: minima
-plugins:
-  - jekyll-feed
+
 
 lsi: false
 safe: true
@@ -46,9 +45,21 @@ kramdown:
   math_engine: mathjax
   syntax_highlighter: rouge
 
-
 # just the docs settings
 color_scheme: dark
+
+aux_links:
+  "GitHub":
+    - "//github.com/just-the-docs/just-the-docs"
+
+nav_external_links:
+  - title: Help us on GitHub
+    url: https://github.com/UniPD-VRJams/unipd-vrjams.github.io
+    hide_icon: false # set to true to hide the external link icon - defaults to false
+  - title: Telegram
+    url: https://t.me/+5655SjYy_DBjZWZk
+    hide_icon: false # set to true to hide the external link icon - defaults to false
+
 
 exclude:
  - README.md
