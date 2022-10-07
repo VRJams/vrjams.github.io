@@ -4,15 +4,10 @@ title: About
 permalink: /about/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
+This event is a collaboration between individual students, the UDU organization and the University of Padua.
 
-You can find the source code for Minima at GitHub:
-[jekyll][jekyll-organization] /
-[minima](https://github.com/jekyll/minima)
+You can find us on [GitHub](https://github.com/UniPD-VRJams).
 
-You can find the source code for Jekyll at GitHub:
-[jekyll][jekyll-organization] /
-[jekyll](https://github.com/jekyll/jekyll)
-
+This website was generated thanks to [GitHub Pages](https://docs.github.com/en/pages), using [Jekyll](jekyll-organization) and the [Just The Docs](https://just-the-docs.github.io/just-the-docs/) theme
 
 [jekyll-organization]: https://github.com/jekyll
