@@ -20,8 +20,8 @@ It support HTC, Oculus, Valve, both on Mobile and PCVR, without a need for expen
 
 The event is non profit, no prizes, competitions or judges, just learning and meeting new people.
 
-For the event, you'll need to *Bring Your Own Device*, so a laptop and *(a friend with)* a HMD are a must.
-You'll need some programming experience, but the technolgy uses the very frienldy Lua, so no pointers or memory management.
+For the event, you'll need to __Bring Your Own Device__, so a laptop and *(a friend with)* a HMD are a must.
+You'll need some programming experience, but the technology uses the very user friendly Luaprogramming lanigage. No need for pointers, memory management or other advanced tools.
 
 Setting up the environment is NOT part of the event. To get all the support consult the [Official Docs]({{page.LOVR-docs}}), the [Unofficial Docs](/docs/) or ask us on [Telegram]({{page.telegram}})
 

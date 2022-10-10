@@ -60,6 +60,18 @@ nav_external_links:
     url: https://t.me/+5655SjYy_DBjZWZk
     hide_icon: false # set to true to hide the external link icon - defaults to false
 
+# Back to top link
+back_to_top: true
+back_to_top_text: "Back to top"
+
+# Callouts need to be defined
+callouts:
+  warning:
+    title: Warning
+    color: red
+  note:
+    title: Note
+    color: grey-lt
 
 exclude:
  - README.md
