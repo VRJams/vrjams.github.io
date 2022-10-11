@@ -8,3 +8,13 @@ HTML elements that appear in the top right of the page.
     <img alt="Telegram group" src="../assets/brand-telegram.svg" width="50">
 </a>
 -->
+<button class="btn js-toggle-dark-mode">Switch theme</button>
+<script> 
+    const toggleDarkMode = document.querySelector('.js-toggle-dark-mode'); 
+    jtd.addEvent(toggleDarkMode, 'click', function () { 
+            if (jtd.getTheme() === 'dark') 
+                { jtd.setTheme('light');} 
+            else { jtd.setTheme('dark');} 
+        }
+    ); 
+</script>

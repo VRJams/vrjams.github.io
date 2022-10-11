@@ -23,7 +23,8 @@ The event is non profit, no prizes, competitions or judges, just learning and me
 For the event, you'll need to __Bring Your Own Device__, so a laptop and *(a friend with)* a HMD are a must.
 You'll need some programming experience, but the technology uses the very user friendly Luaprogramming lanigage. No need for pointers, memory management or other advanced tools.
 
-Setting up the environment is NOT part of the event. To get all the support consult the [Official Docs]({{page.LOVR-docs}}), the [Unofficial Docs](/docs/) or ask us on [Telegram]({{page.telegram}})
+{: .warning }
+__Setting up the environment is NOT part of the event.__ To learn how to do that, consult the [Official Docs]({{page.LOVR-docs}}), the [Unofficial Docs](/docs/), ask us on [Telegram]({{page.telegram}}) or on the [Official Slack](Offical Slack: https://lovr.org/slack)
 
 ### Requirements 
 

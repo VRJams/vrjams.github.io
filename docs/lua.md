@@ -13,10 +13,15 @@ You'll leikly have to build your own tools and methods to do a lot of non-trivia
 
 The Lua version used in the engine is LuaJIT, so for more advaanced thing and some more complex libraries, keep an eye out.
 ## To get started
+--------------------------------------------------------------------------------------------------------------
+{: .mt-2 .mb-4}
+
+These are some good resources, both for complete novices and more experienced programmers.
+
  - [Official Lua book](https://www.lua.org/pil/contents.html)
  - [Learn Lua in 15 minutes](https://tylerneylon.com/a/learn-lua/)
  - [Learn Lua in Y minutes](https://learnxinyminutes.com/docs/lua/)
  - [Lua on Exercism](https://exercism.org/docs/tracks/lua/resources)
  - [Lua syle guide](https://github.com/Olivine-Labs/lua-style-guide)
 
-You can find more libraries on Github, but the LOVR docs have a [specific list](https://lovr.org/docs/Libraries) for tested or developed in house
+You can find more libraries on Github, but the LOVR docs have a [specific list](https://lovr.org/docs/Libraries) for tested or developed in house.
