@@ -12,6 +12,7 @@ If you already have some basic experience with programming, Lua should be easy t
 You'll leikly have to build your own tools and methods to do a lot of non-trivial tasks, and you can also rely on a lot of available libraries built in Lua. 
 
 The Lua version used in the engine is LuaJIT, so for more advaanced thing and some more complex libraries, keep an eye out.
+
 ## To get started
 --------------------------------------------------------------------------------------------------------------
 {: .mt-2 .mb-4}
