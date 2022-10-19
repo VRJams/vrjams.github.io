@@ -27,8 +27,8 @@ After instlling the framework on you device (see [the docs](getting_started.md))
 
 LOVR executes the `main` file by executing the callbacks definied in it, like `lovr.draw()`.
 These callbacks are functions that LÖVR calls at specific moments. THe most notable are:
- - `lovr.draw()`, called at each frame to generate the image
- - `lovr.update(dt)`, used for physiscs and game logic, passing also the `dt` value of the delta time since the last call
  - `lovr.load()`, executed at the start of the program
+ - `lovr.update(dt)`, used for physiscs and game logic, passing also the `dt` value of the delta time since the last call
+ - `lovr.draw()`, called at each frame to generate the image
 
 LOVR also exposes a seres of modues to execute functions, such as the `lovr.headset` module which gives access to thinsg ike headset and hands positions, number of tracke limbs and so on, or the `lovr.graphics` which gives us functions to draw models, textures and more.
