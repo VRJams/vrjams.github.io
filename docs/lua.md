@@ -107,3 +107,24 @@ function Class.new(self, val1, val_2) --define generting method
 end
 ```
 
+
+## Plugins
+
+Beyond Lua libraries, we can extent LOVR's capabilities with Plugins.
+
+These are similarly accessed using `require`, but under the hood they call on compiled libraries, such as `.dll` or `.so`.
+The compiled libraries can be accessed using the predefined Lua method for calling libraries, detailed more in the [Official LOVR Docs](https://lovr.org/docs/v0.15.0/Plugins) or in the [Lua Wiki](https://www.lua.org/manual/5.1/manual.html#pdf-package.loaders) 
+This methods requires the library to be built explicitly for Lua integration.
+
+Alternatively, you can use the [FFI](https://en.wikipedia.org/wiki/Foreign_function_interface) Lua system, a common set of functions that alow functions from one language to call functions from a library, without requiring editing the code of the library.
+This method is pretty complex and the LOVR documentation does not really acknowledge it, but some users have succesfully use ti to implement libraries not built for Lua.
+
+To get a grasp on FFI, you can read this [SO post](https://stackoverflow.com/questions/5440968/understand-foreign-function-interface-ffi-and-language-binding)
+
+Makign plugin work is much easier on PCVR, where finding libraries, compiling and accessing them is easy and well documented. LOVR also allows the `require` call to access libraries from any folder.
+This is not the case for Mobile VR, where you need to find and compile valid libraries for the Android OS, and these need to be added to the `lib/arm64-v8a` of the APK. This can in theory be acheived using software like APKTool and then Resigning the APK, but it's a much less straightforward process and rewquires much more experience with Android OS and the APK system.
+It also means that plugins are not shared via shared projects, but require you to share the entire APK or library. 
+
+Plugins are extremely powerful, allowing access to things like [network capabilities](https://github.com/LPGhatguy/luajit-request), [high performance C functions](https://github.com/bjornbytes/lua-cjson) or even [emulate the PSX system](https://github.com/sgosselin/retrovr-old)
+
+If you're interested in network access, come see what we have on [Telegram](https://t.me/+5655SjYy_DBjZWZk).
