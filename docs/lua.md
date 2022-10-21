@@ -109,6 +109,8 @@ end
 
 
 ## Plugins
+--------------------------------------------------------------------------------------------------------------
+{: .mt-2 .mb-4}
 
 Beyond Lua libraries, we can extent LOVR's capabilities with Plugins.
 
