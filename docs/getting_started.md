@@ -13,9 +13,9 @@ It's much more detailed and thorough.
 --------------------------------------------------------------------------------------------------------------
 {: .mt-2 .mb-4}
 
-Download LOVR from their [website](https://lovr.org/downloads) and extract it to a useful folder, such as `/Engine/`.
+Download LOVR from the [website](https://lovr.org/downloads) and extract it to a useful folder, such as `/Engine/`.
 
-Next, create  aproject folder, suc h as /Project/. Here all you code, assets and other files will reside. For now, just make a `main.lua` file with the following code:
+Next, create a project folder, such as `/Project/`. Here all you code, assets and other files will reside. For now, just make a `main.lua` file with the following code:
 ```lua
 function lovr.draw()
   lovr.graphics.print('hello world', 0, 1.7, -3, .5)
@@ -40,20 +40,20 @@ You'll also likely want to use [LODR](https://github.com/mcclure/lodr) for live 
 
 Download LOVR from the [website](https://lovr.org/downloads), then install the APK to your device.
 
-Next, create  aproject folder, suc h as /Project/. Here all you code, assets and other files will reside. For now, just make a `main.lua` file with the following code:
+Next, create a project folder, such as `/Project/`. Here all you code, assets and other files will reside. For now, just make a `main.lua` file with the following code:
 ```lua
 function lovr.draw()
   lovr.graphics.print('hello world', 0, 1.7, -3, .5)
 end
 ```
 
-The folder needs to be sent to a folder on your HMD, which for the default app it's `/sdcard/Android/data/org.lovr.app/files`.
+The folder needs to be sent to a folder on your HMD, which for the default app is `/sdcard/Android/data/org.lovr.app/files`.
 
-This can be done via manually or via ADB with a `adb push --sync /local/folder/to/Project/. /remote/folder/`. 
+This can be done via manually or via ADB with `adb push --sync /local/folder/to/Project/. /remote/folder/`. 
 
 Keep in mind that LOVR does not restart when files are changed, you can either restart it manually, use ADB again or use [LODR](https://github.com/mcclure/lodr)
 
-You should see the Hello World message
+You should see the "Hello World" message!
 
 # Setting up your IDE
 My only experience is with VSCode, which I recommend, but writing Lua and executing LÖVR does not require any special setup, so anything you want is fine.
@@ -69,4 +69,4 @@ Having a couple extensions for Lua debugging makes it easier to spot errors befo
 
 You can then setup these to support LOVR in detail using the [official guide](https://gist.github.com/ussaohelcim/9eca6eaa903eefff07b4f3e2019de915), this gives you access to documentation about the functions and methods directly in the IDE.
 
-You might also want to setup quick Tasks to run the Project, be it via ADB for mobile platofrms or local shell. You can find my setup at my [Repo](https://github.com/Udinanon/LOVR_Experiments/blob/main/.vscode/tasks.json), for Quest devices
+You might also want to setup quick Tasks to run the Project, be it via ADB for mobile platforms or local shell. You can find my setup at my [Repo](https://github.com/Udinanon/LOVR_Experiments/blob/main/.vscode/tasks.json), for Quest devices
