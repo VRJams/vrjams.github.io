@@ -50,7 +50,7 @@ color_scheme: dark
 
 aux_links:
   "GitHub":
-    - "//github.com/just-the-docs/just-the-docs"
+    - "https://github.com/UniPD-VRJams/unipd-vrjams.github.io"
 
 nav_external_links:
   - title: Help us on GitHub

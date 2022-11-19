@@ -11,7 +11,7 @@ This has heavily changed between version 0.15 and 0.16, with many functions chan
 The following content covers version 0.15, for 0.16 see the [LOVR Docs](https://lovr.org/docs/v0.16.0/lovr.graphics)
 
 Most of the graphical work in LOVR is made by the `lovr.graphics` module.
-This allows us to draw simple primitives, load and manipualte complex objects such as meshes or joints, appky geometric transofrms on bodies, manipulate the window in PCVR and run shaders.
+This allows us to draw simple primitives, load and manipulate complex objects such as meshes or joints, apply geometric transforms on bodies, manipulate the window in PCVR and run shaders.
 
 Methods to draw primitives, such as cubes or skyboxes, are called directly at the `lovr.draw()` step, so at each frame
 ``` lua
@@ -24,7 +24,7 @@ end
 ```
 Vectors are automatically unpacked into single arguments, making code much easier to read
 
-To draw more complex obects, such as those created in 3D modelling sftware we ned to import them from files, usually done at loadtime in `lovr.load()`, and then each object has a `:draw()` call to be execute at each frame
+To draw more complex objects, such as those created in 3D modelling software we need to import them from files, usually done at load time in `lovr.load()`, and then each object has a `:draw()` call to be executed at each frame
 ```lua
 function lovr.load()
     corridor = lovr.graphics.newModel("Assets/corridor.obj") -- import model from file
@@ -34,23 +34,23 @@ function lovr.draw()
     corridor:draw(0,-2, 0)
 end
 ```
-Support filetypes and more details can be found on the [specific Docs page](https://lovr.org/docs/v0.15.0/Model)
+Support file types and more details can be found on the [specific Docs page](https://lovr.org/docs/v0.15.0/Model)
 
-You might notice that objects look odd, either completey flat in color or completely black. This is beacuse LOVR by default uses a very simple shader that simulates no light and uses flat colors.
-To get better results you'll need to eitehr try the other [included shaders](https://lovr.org/docs/v0.15.0/DefaultShader), by calling `default_shader = lovr.graphics.newShader(default, options)` and then `lovr.graphics.setShader(default_shader)`, or you'll have to learn something about shaders, OpenGL and how game graphics work. 
+You might notice that objects look odd, either completely flat or completely black. This is because LOVR by default uses a very simple shader that simulates no light and uses flat colors.
+To get better results you'll need to either try the other [included shaders](https://lovr.org/docs/v0.15.0/DefaultShader), by calling `default_shader = lovr.graphics.newShader(default, options)` and then `lovr.graphics.setShader(default_shader)`, or you'll have to learn something about shaders, OpenGL and how game graphics work. 
 
 ## Shaders
 --------------------------------------------------------------------------------------------------------------
 {: .mt-2 .mb-4}
 
-Shaders are GPU software that computes 3D information to create 2D images. They get the position of models, textures, lights, effects, particels and so on and return the color values of pixels. 
-Shaders can be an extremely complex topic, fundamental for 3D rendering, and can be used also for parallel high performance computations, in whcih case they're called Compute Shaders.
+Shaders are GPU software that computes 3D information to create 2D images. They get the position of models, textures, lights, effects, particles and so on and return the color values of pixels. 
+Shaders can be an extremely complex topic, fundamental for 3D rendering, and can be used also for parallel high performance computations, in which case they're called Compute Shaders.
 
 To read some introductory material on shaders:
  - [AeroTwist Intro to shaders](https://aerotwist.com/tutorials/an-introduction-to-shaders-part-1/)
  - [The Book of shaders](https://thebookofshaders.com/)
  - [What Are Shaders?](https://www.youtube.com/watch?v=sXbdF4KjNOc)
- - [How Lighting (Basically) owrks in Games](https://www.youtube.com/watch?v=VXggMZvqSvM)
+ - [How Lighting (Basically) works in Games](https://www.youtube.com/watch?v=VXggMZvqSvM)
  - [Shader Basics](https://www.youtube.com/watch?v=UVNnkDqcTGE)
  - [LOVR 0.16 Shaders docs](https://lovr.org/docs/v0.16.0/Shaders)
 
@@ -58,16 +58,16 @@ More advanced material can be found at
  - [OpenGL shading docs](https://www.khronos.org/files/opengles_shading_language.pdf)
  - [Shader Toy](https://www.shadertoy.com/)
 
-Don't be afraid to experiment and test, shaders can be complicated but even basic functions and some creativity can give you a lot of great results. 
+Don't be afraid to experiment and test, shaders can be complicated, but even basic functions and some creativity can give you a lot of great results. 
 Trying random code from the internet is also highly encouraged
 
 LOVR shaders can communicate with the main Lua program by two means: 
  - `uniforms <type> <name>` values, passed to the GPU with `shader:send(<name>, <value>)`, such as positions in 3D or other simple data
- - `ShaderBlocks` which can pass much more data easily, such as a tables of objects and more
+ - `ShaderBlocks` which can pass much more data easily, such as a table of objects and more
 
-For more info make reference to the [New Shader Block Docs](https://lovr.org/docs/v0.15.0/lovr.graphics.newShaderBlock) and [Shader Block Docs](https://lovr.org/docs/v0.15.0/ShaderBlock)
+For more info, make reference to the [New Shader Block Docs](https://lovr.org/docs/v0.15.0/lovr.graphics.newShaderBlock) and [Shader Block Docs](https://lovr.org/docs/v0.15.0/ShaderBlock)
 
-A correct usage of shaders and other functions can be used to completely overhaul the 3D rendering process, allowing you to draw images with methods such as [RayMarching](https://www.youtube.com/watch?v=PGtv-dBi2wE).
+A correct usage of shaders and other functions can be used to completely overhaul the 3D rendering process, allowing you to draw images with methods such as [Ray Marching](https://www.youtube.com/watch?v=PGtv-dBi2wE).
 
 ### Vertex Shaders
 --------------------------------------------------------------------------------------------------------------
@@ -76,7 +76,7 @@ A correct usage of shaders and other functions can be used to completely overhau
 These shaders compute the 3D geometrical properties of the model, having access to parameters such as vertex position, transform matrices for the view camera, the projection matrix and more.
 The returned value is the position in the world of the vertex after being processed.
 
-the default is 
+The default is 
 ```glsl
     vec4 position(mat4 projection, mat4 transform, vec4 vertex) {
     return vertex;
@@ -84,7 +84,7 @@ the default is
 ```
 which does fundamentally nothing to the vertex
 
-Values here can be exfiltrated to the Fragment shader by declating a `out <type> <name>` variable and defining them in the shader code.
+Values here can be exfiltrated to the Fragment shader by declaring a `out <type> <name>` variable and defining them in the shader code.
 
 Some of the available default values are 
 ```glsl 
@@ -124,9 +124,9 @@ vec4 color(vec4 graphicsColor, sampler2D image, vec2 uv) {
   return graphicsColor * lovrDiffuseColor * lovrVertexColor * texture(image, uv);
 }
 ```
-with `uv` being the 2D coords of the face being rendered, normalized in a [0.0 1.0] range. This shader integrates parameters such as the texture of the object, the color set in `lovr.graphics.setColor()`, diffuse color and a few moew, but no lighting.
+With `uv` being the 2D coordinates of the face being rendered, normalized in a [0.0 1.0] range. This shader integrates parameters such as the texture of the object, the color set in `lovr.graphics.setColor()`, diffuse color and a few more, but no lighting.
 
-we can access shared values from the Vertex Shader with `in <type> <name>`
+We can access shared values from the Vertex Shader with `in <type> <name>`
 
 The standard header is 
 ```glsl
@@ -153,5 +153,4 @@ uniform int lovrViewID;
 --------------------------------------------------------------------------------------------------------------
 {: .mt-2 .mb-4}
 
-These are not graphical shaders, but programs run on the GPU to harness its highly parallel architecture. They usually rely on much more data beng moved to and from the GPU and require a deeper understanding of GPU hardware and parallel programming methods and challenges to be used effectively, but can also be extremely useful and powerful. 
-
+These are not graphical shaders, but programs run on the GPU to harness its highly parallel architecture. They usually rely on much more data being moved to and from the GPU and require a deeper understanding of GPU hardware and parallel programming methods and challenges to be used effectively, but can also be extremely useful and powerful. 

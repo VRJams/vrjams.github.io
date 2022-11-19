@@ -33,7 +33,7 @@ You should see the Hello World message
 --------------------------------------------------------------------------------------------------------------
 {: .mt-2 .mb-4}
 
-You'll need to have you device in developer mode or equivalent, so for the Quest you can see [their own guide](https://developer.oculus.com/documentation/quest/latest/concepts/mobile-device-setup-quest/) or any other equivalent, the key needs are being able to access files, install applications and use `adb`. 
+You'll need to have your device in developer mode or equivalent, so for the Quest you can see [their own guide](https://developer.oculus.com/documentation/quest/latest/concepts/mobile-device-setup-quest/) or any other equivalent, the key needs are being able to access files, install applications and use `adb`. 
 Setting up `WiFi ADB` is also probably a good idea. Refer to the [ADB](/docs/adb/) section of the guide for more info.
 
 You'll also likely want to use [LODR](https://github.com/mcclure/lodr) for live reloading.
@@ -62,11 +62,11 @@ My only experience is with VSCode, which I recommend, but writing Lua and execut
 --------------------------------------------------------------------------------------------------------------
 {: .mt-2 .mb-4}
 
-Having a couple extensions for Lua debugging makes it easier to spot errors beforehand and gives highlighting. I use:
+Having a couple of extensions for Lua debugging makes it easier to spot errors beforehand and gives highlighting. I use:
  - [Lua](https://marketplace.visualstudio.com/items?itemName=keyring.Lua)
  - [Lua Language Server](https://marketplace.visualstudio.com/items?itemName=sumneko.lua)
  - [Lua Debug](https://marketplace.visualstudio.com/items?itemName=actboy168.lua-debug)
 
-You can then setup these to support LOVR in detail using the [official guide](https://gist.github.com/ussaohelcim/9eca6eaa903eefff07b4f3e2019de915), this gives you access to documentation about the functions and methods directly in the IDE.
+You can then set up these to support LOVR in detail using the [official guide](https://gist.github.com/ussaohelcim/9eca6eaa903eefff07b4f3e2019de915), this gives you access to documentation about the functions and methods directly in the IDE.
 
-You might also want to setup quick Tasks to run the Project, be it via ADB for mobile platforms or local shell. You can find my setup at my [Repo](https://github.com/Udinanon/LOVR_Experiments/blob/main/.vscode/tasks.json), for Quest devices
+You might also want to set up quick Tasks to run the Project, be it via ADB for mobile platofrms or local shell. Furthermore, you can find my setup at my [Repo](https://github.com/Udinanon/LOVR_Experiments/blob/main/.vscode/tasks.json), for Quest devices
