@@ -1,15 +1,2 @@
-# unipd-vrjams.github.io
-The official website of the UniPD VRJams!
-
-
-## TODO:
- - expand section in Getting Started including setting up IDEs (VSCode)
- - expand section on LÖVR
- - docs about:
-   - ADB
-   - Performance Metrics
-   - Shaders 
-   - Geometry
-   - Quaternions
- - add logo in top left
- - decide on logos or links in top right
+# vrjams.github.io
+This is the repo for the code of the website of VRJams, a group of university students from the University of Padua interested in VR development and Open Source Software

@@ -18,14 +18,14 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: UniPD VRJams
+title: VRJams
 email: martino.trapanotto@studenti.unipd.it
 description: >- # this means to ignore newlines until "baseurl:"
-  The official website for the UniPD VRJams! coming soon to a department near you (maybe)
+  The official website for the VRJams group in from UniPD students! coming soon to a department near you
 baseurl: "" # the subpath of your site, e.g. /blog
-github_username:  unipd-vrjams
-domain: unipd-vrjams.github.io       # if you want to force HTTPS, specify the domain without the http at the start, e.g. example.com
-url: https://unipd-vrjams.github.io  # the base hostname and protocol for your site, e.g. http://example.com
+github_username:  vrjams
+domain: vrjams.github.io       # if you want to force HTTPS, specify the domain without the http at the start, e.g. example.com
+url: https://vrjams.github.io  # the base hostname and protocol for your site, e.g. http://example.com
 baseurl: /
 
 
@@ -50,11 +50,11 @@ color_scheme: dark
 
 aux_links:
   "GitHub":
-    - "https://github.com/UniPD-VRJams/unipd-vrjams.github.io"
+    - "https://github.com/VRJams/vrjams.github.io"
 
 nav_external_links:
   - title: Help us on GitHub
-    url: https://github.com/UniPD-VRJams/unipd-vrjams.github.io
+    url: https://github.com/VRJams/vrjams.github.io
     hide_icon: false # set to true to hide the external link icon - defaults to false
   - title: Join on Telegram
     url: https://t.me/+5655SjYy_DBjZWZk
