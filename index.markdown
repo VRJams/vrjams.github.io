@@ -10,47 +10,34 @@ LOVR-docs: https://lovr.org/docs
 LOVR: https://lovr.org
 telegram: https://t.me/+5655SjYy_DBjZWZk
 ---
-# Welcome to the Official Page for the UniPD VRJam!
-We're organizing an upcoming event at UniPD, in collaboration with the DEI department and UDU, for students to learn, share and create in the field of VR!
+# Welcome!
+VRJams is a newly born project from a group of UniPD students, to learn about VR and to bring our visions to life.
+Our goal is to help students get some hands-on programming experience, develop 3D and VR software, explore the potentials and limitations of these technologies and enter the world of Open Source software.
 
-Here you'll find everything you need to get up to speed, to secure a spot in the event, and to learn how to use the Framework.
+## How?
+To create our programs, we decided to use [LÖVR]({{page.LOVR}}), a great VR framework, easily accessible for beginners and great for prototyping and shaping new ideas, all free and open source. It's also widely cross-platform, supporting Both PCVR headsets like HTC Vive or Oculus Rift, and Android based Headsets like the Quest 2 and Pico 4.
 
-We'll be using the [LÖVR]({{page.LOVR}}) framework, an open source project, to create responsive VR experiences for all VR devices. 
-It supports HTC, Oculus and Valve devices, both on Mobile and PCVR, without a need for high-end hardware
+## Do I need a VR headset?
+No, a headset is not a requirement. The software runs on a normal laptop perfectly fine, without even much of a need for high performance graphics cards or whatnot. You can interact with the VR environment with keyboard and mouse, although there are some limits to this. At our meetings you might be able to borrow someone's headset to try your code out!
 
-The event is non-profit; no prizes, competitions or judges, just learning and meeting new people.
+We're also talking with the DEI to get some funds for headsets, but that's a story for another time
 
-For the event, you'll need to __Bring Your Own Device__, so a laptop and an HMD are almost mandatory. You can use the framework without a headset, but it's not an optimal experience.
+## Do I have to be good at programming?
 
-You'll need some programming experience, but the technology uses the very user-friendly Lua programming language. No need for pointers, memory management or other advanced tools.
+No, while [LÖVR]({{page.LOVR}}) is built in C, it has a complete interface in Lua, a very beginner-friendly language. It's kinda like Python, only much faster thanks to the LuaJIT. 
 
-{: .warning }
-__Setting up the environment is NOT part of the event.__ To learn how to do that, consult the [Official Docs]({{page.LOVR-docs}}), the [Unofficial Docs](/docs/), ask us on [Telegram]({{page.telegram}}) or on the [Official Matrix](https://lovr.org/matrix) or the [Official Slack](https://lovr.org/slack)
+If you are interested, you can also use OpenGL and GLSL to create graphics code for visual effects or to run computations on the GPU, or even delve into the inner workings of [LÖVR]({{page.LOVR}}) using C. It's all open!
 
-The current target for the event is the second week of November, so get everything ready and get comfortable with the technology beforehand.
+## Unsure?
 
-You will also have to join the [Telegram Group]({{page.telegram}}) to keep up to date with the event and interact with the admins and participants.
-Some info might be available only there, so be sure to join!
+I'll give you a quick peek at one of our working projects
 
-## What are the requirements?
---------------------------------------------------------------------------------------------------------------
-{: .mt-2 .mb-4}
+<div class="myvideo">
+   <video  style="display:block; width:60%; height:auto;" autoplay controls loop="loop">
+       <source src="assets/GTB3_comp.webm"  type="video/webm"  />
+   </video>
+</div>
 
-As stated before, the event is a __Bring Your Own Device__, so a laptop and *(a friend with)* an HMD are a must.
-You don't need an HMD to use the framework, but it's hard to really understand the technology and how to use it without some real world feedback. You can absolutely share a headset between participants.
+If you have any quesions, you can join our [Telegram Group]({{page.telegram}}). We also meet reguarly at the DEI, in room Se (ground floor, end of the hallway, right) every Thursday between 16:00 and 18:00.
 
-You'll also need some free time before the event to set up everything, and some programming experience. Lua is quite an easy language, and we have compiled some materials on how to get up to speed with in [the docs](/docs/lua.md).
-
-For reference, some experience with variables, loops and functions is a solid foundation for using the basics, object-oriented programming experience might also be useful.
-
-You can also use OpenGL for shading and C/C++ and the Android NDK to add libraries, but that's more advanced. 
-
-Experience with ADB is also recommended if you'll be using an Android headset.
-
-
-## When and where?
---------------------------------------------------------------------------------------------------------------
-{: .mt-2 .mb-4}
-
-The first edition was 15-18 November, 2022 at the DEI department, in room Se.
-
+We'll also be hosing a bigger event for newcomers in March/April, stay tuned for more info!

@@ -6,7 +6,7 @@ nav_order: 4
 ---
 
 # ADB
-ADB or [Android Debug Bridge](https://developer.android.com/studio/command-line/adb) is one of the key utilities used by android developer and power users to control Android to its core without rooting.
+ADB or [Android Debug Bridge](https://developer.android.com/studio/command-line/adb) is one of the key utilities used by Android developers and power users to control Android to its core without rooting.
 It's a key tool to use LOVR effectively on your Android HMD, making it much faster to debug, install, update and much more.
 
 To use it, you need three steps first:
@@ -24,10 +24,10 @@ ADB is __usually__ hidden in the Developer Settings of the device, but it's not 
 
 This process is a bit involved, as Meta requires users to register as developers. It's not hard, just tedious.
 
-1. create an organization on [Meta's page](https://developer.oculus.com/manage/organizations/create/) with a valid Meta account, which you can create unlinked from any Facebook profiles
+1. Create an organization on [Meta's page](https://developer.oculus.com/manage/organizations/create/) with a valid Meta account, which you can create unlinked from any Facebook profiles
 2. Install the Oculus App on your phone
 3. Link the app to the HMD and your account, linked to the organization
-4. Activate **Activate Mode** setting in the **Headset Settings** in the app 
+4. Activate **developer Mode** setting in the **Headset Settings** in the app 
 5. In your HMD, in **Settings**, find **Developer** and activate **USB Connection Dialogue**
 
 Now your headset can use ADB!
@@ -54,13 +54,13 @@ Otherwise, this process depends on your OS of choice
 ### Windows
 1. Go to the [Official ADB Page](https://developer.android.com/studio/releases/platform-tools) and download the SDK Platform.
 You can also use Android Studio, but for this it's overkill
-2. Unpack the folder somewhere safe and without weird permission rules, C:/adb/ is a classic
+2. Unpack the folder somewhere safe and without weird permission rules, C:/ADB/ is a classic
 3. Add the folder to window's PATH variable, so you can just call `adb` via command line
    
 ### Linux
 1. Some distros carry `adb` in their repo, check those to have the best experience
 2. otherwise, you can go to the [Official ADB Page](https://developer.android.com/studio/releases/platform-tools) and download the SDK Platform.
-2. Unpack the folder somewhere safe and without weird permission rules, HOME/adb/ is probably fine
+2. Unpack the folder somewhere safe and without weird permission rules, HOME/ADB/ is probably fine
 3. Add the folder to your home's `$PATH` variable or equivalent, so you can just call `adb` via command line
 
 ### macOS
