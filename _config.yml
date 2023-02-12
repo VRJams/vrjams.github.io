@@ -48,9 +48,9 @@ kramdown:
 # just the docs settings
 color_scheme: dark
 
-aux_links:
-  "GitHub":
-    - "https://github.com/VRJams/vrjams.github.io"
+#aux_links:
+#  "GitHub":
+#    - "https://github.com/VRJams/vrjams.github.io"
 
 nav_external_links:
   - title: Help us on GitHub
