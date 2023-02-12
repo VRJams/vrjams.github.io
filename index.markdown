@@ -38,6 +38,6 @@ I'll give you a quick peek at one of our working projects
    </video>
 </div>
 
-If you have any quesions, you can join our [Telegram Group]({{page.telegram}}). We also meet reguarly at the DEI, in room Se (ground floor, end of the hallway, right) every Thursday between 16:00 and 18:00.
+If you have any questions, you can join our [Telegram Group]({{page.telegram}}). We also meet regularly at the DEI, in room Se (ground floor, end of the hallway, right) every Thursday between 16:00 and 18:00.
 
 We'll also be hosing a bigger event for newcomers in March/April, stay tuned for more info!

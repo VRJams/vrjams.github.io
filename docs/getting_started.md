@@ -5,6 +5,7 @@ title: Setting Up
 nav_order: 1
 ---
 # Setting up LÖVR
+
 {: .warning }
 For this section, you should also go and read the official [LOVR Guide](https://lovr.org/docs/Getting_Started).
 It's much more detailed and thorough.
@@ -69,4 +70,4 @@ Having a couple of extensions for Lua debugging makes it easier to spot errors b
 
 You can then set up these to support LOVR in detail using the [official guide](https://gist.github.com/ussaohelcim/9eca6eaa903eefff07b4f3e2019de915), this gives you access to documentation about the functions and methods directly in the IDE.
 
-You might also want to set up quick Tasks to run the Project, be it via ADB for mobile platofrms or local shell. Furthermore, you can find my setup at my [Repo](https://github.com/Udinanon/LOVR_Experiments/blob/main/.vscode/tasks.json), for Quest devices
+You might also want to set up quick Tasks to run the Project, be it via ADB for mobile platforms or local shell. Furthermore, you can find my setup at my [Repo](https://github.com/Udinanon/LOVR_Experiments/blob/main/.vscode/tasks.json), for Quest devices
